@@ -8,7 +8,7 @@ var budgetP = document.querySelector('p');
 function getBudget() {
     var startingBudget = document.getElementById('nameField').value;
     budget = Math.floor(startingBudget);
-    document.querySelector('p').innerHTML = "Your budget is $" + budget;
+    document.querySelector('h1').innerHTML = "Your budget is $" + budget;
 }
 
 //button listener

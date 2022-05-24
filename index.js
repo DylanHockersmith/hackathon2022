@@ -30,7 +30,7 @@ subButton.addEventListener("click", getBudget);
 
 
 function createItem(x) {
-  let dButton = `<li>${x} <button onclick="deleteItem(this)">Remove</button><button onclick="payBill(this, 'green')">Pay</button></li>`;
+  let dButton = `<li>${x} <button onclick="deleteItem(this)">Remove</button><button onclick="payBill(this, 'grey', 'green')">Pay</button></li>`;
   ourList.insertAdjacentHTML("beforeend", dButton);
   ourField.value = "";
   ourField.focus;
@@ -40,6 +40,7 @@ function deleteItem(elementToDelete) {
   elementToDelete.parentElement.remove();
 }
 
-function payBill(element, color) {
+function payBill(element, color, backgroundColor) {
     element.style.color = color;
+    element.style.backgroundColor = backgroundColor;
   }

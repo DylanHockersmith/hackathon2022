@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budget-App</title>
+    <title>Budgets And Dragons</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1 id='budget-p p'>Enter your budget to begin!</h1>
     </div>
-    <label id='nameLable' for='nameField'>Enter budget here:</label>
+    <div class="container">
+    <label class="p" id='nameLable' for='nameField'>Enter budget here:</label>
     <input id='nameField' type='text' maxlength='25'></input>
-    <button id="sub-button" class="btn">Submit</button>
+    <button id="sub-button" class="btn styled">Submit</button>
+</div>
 
-<div>
+<div class="container">
     <h3>Bills to Pay</h3>
     <ul id="ourList">
     </ul>
 
     <form id="ourForm">
         <input id="ourField" type="text" autocomplete="off">
-        <button>Create item</button>
+        <button class="styled">Create item</button>
       </form>
       <script src="index.js"></script>
 </div>
